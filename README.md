@@ -37,14 +37,11 @@ Before using this codebase, ensure you have:
 
 3. **Load Data**
    - Navigate to the internal stage created in setup.sql
-   - Upload the data file from the `data` directory
+   - Upload the data file `data/7.1-total-medi-cal-enrollment-q4-2024-odp.csv`
    - Verify data is successfully loaded into the tables
 
 4. **Load Notebook**
-   - Open Snowflake Data Marketplace
-   - Navigate to your worksheet
-   - Click "Upload" and select the `AI_SQL.ipynb` file
-   - Wait for the notebook to be fully loaded
+   - Create a new Snowflake Notebook either from the repository https://github.com/galaga2000/medi-cal-cortex-insights/blob/main/ai_sql.ipynb or by Click "Upload" and select the `ai_sql.ipynb` file
 
 5. **Run the Analysis**
    - Execute the cells in sequence:
@@ -59,50 +56,15 @@ Before using this codebase, ensure you have:
 - `setup.sql`: SQL setup script for database configuration
 - `instructions.txt`: Additional setup instructions
 
-## Usage
-
-1. Open the notebook in Snowflake
-2. Ensure your Snowflake session is active
-3. Run cells in sequence to:
-   - Load and process enrollment data
-   - Apply AI classification to enrollment trends
-   - Generate visual summaries
-   - Create interactive visualizations
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## Support
-
-For support, please:
-1. Check the documentation
-2. Open an issue in the repository
-3. Contact the maintainers
-
 ## Acknowledgments
 
 - Snowflake for providing Cortex AI capabilities
-- Medi-Cal for the enrollment data
-- Open-source community for contributing to the tools used in this project
+- Medi-Cal for the enrollment data https://data.chhs.ca.gov/dataset/medi-cal-enrollment-by-eligibility-group/resource/d33eee4a-4c17-48da-8099-3fd2bac29ac2
 
-## Usage
-
-1. Open the notebook in Snowflake
-2. Ensure your Snowflake session is active
-3. Run cells in sequence to:
-   - Load and process enrollment data
-   - Apply AI classification to enrollment trends
-   - Generate visual summaries
-   - Create interactive visualizations
 
 ## License
 
@@ -110,23 +72,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 The MIT License allows for free use, modification, and distribution of the code, provided that the copyright notice and license terms are included.
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## Support
-
-For support, please:
-1. Check the documentation
-2. Open an issue in the repository
-3. Contact the maintainers
-
 ## Acknowledgments
 
 - Snowflake for providing Cortex AI capabilities
-- Medi-Cal for the enrollment data
-- Open-source community for contributing to the tools used in this project
+- Medi-Cal for the enrollment data https://data.chhs.ca.gov/dataset/medi-cal-enrollment-by-eligibility-group/resource/d33eee4a-4c17-48da-8099-3fd2bac29ac2
