@@ -41,7 +41,7 @@ Before using this codebase, ensure you have:
 
 4. **Load Notebook**
    - Create a new Snowflake Notebook either from the repository https://github.com/galaga2000/medi-cal-cortex-insights/blob/main/ai_sql.ipynb or by Click "Upload" and select the `ai_sql.ipynb` file
-   - [Open the notebook in Snowflake](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-snowgit)
+   - [Open the notebook in Snowflake](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-snowgit#connect-an-existing-notebook-with-a-git-repository)
 
 5. **Run the Analysis**
    - Execute the cells in sequence:
