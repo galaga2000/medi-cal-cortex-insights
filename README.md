@@ -48,11 +48,6 @@ Before using this codebase, ensure you have:
             
     2. Import the notebook to worksheet from your cloned repository
 
-   **Alternative Method - Using Existing Notebook**
-   - On the left hand navigation menu, select:
-     Databases MEDI_CAL_ELIGIBILITY » ELIGIBILITY » Git Repositories » GIT REPO
-   - Select `ai_sql.ipynb` Notebook that is already available in your Snowflake account
-
 5. **Run the Analysis**
    - Execute the cells in sequence:
      1. First cell: Import statements and Snowflake session initialization
