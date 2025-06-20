@@ -62,7 +62,6 @@ Before using this codebase, ensure you have:
 
 - `AI_SQL.ipynb`: Main notebook containing the AI analysis pipeline
 - `setup.sql`: SQL setup script for database configuration
-- `instructions.txt`: Additional setup instructions
 
 ## License
 
