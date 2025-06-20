@@ -2,6 +2,17 @@ CREATE DATABASE IF NOT EXISTS MEDI_CAL_ELIGIBILITY;
 
 CREATE SCHEMA IF NOT EXISTS MEDI_CAL_ELIGIBILITY.ELIGIBILITY;
 
+CREATE OR REPLACE API INTEGRATION git_api_integration
+  API_PROVIDER = git_https_api
+  API_ALLOWED_PREFIXES = ('https://github.com/galaga2000/')
+  ENABLED = TRUE;
+
+CREATE OR REPLACE GIT REPOSITORY git_repo
+    api_integration = git_api_integration
+    origin = 'https://github.com/galaga2000/medi-cal-cortex-insights';
+
+-- Make sure we get the latest files
+ALTER GIT REPOSITORY git_repo FETCH;
 
 
 CREATE OR REPLACE STAGE MEDI_CAL_STAGE
@@ -20,7 +31,7 @@ CREATE OR REPLACE TABLE MEDI_CAL_ENROLLMENT (
   number_of_enrollees    NUMBER(38,0)
 );
 
---Load files into stage
+--Load file into stage from data/ directory using SnowSQL with Put or Snowsight
 
 COPY INTO MEDI_CAL_ENROLLMENT (year, reporting_period, eligibility_group, number_of_enrollees)
 FROM (
