@@ -43,7 +43,7 @@ Before using this codebase, ensure you have:
 
     1. create notebook from git repository
         - Verify Notebook that is already available in your Snowflake account as shown below.
-    On the left hand navigation menu, select Databases MEDI_CAL_ELIGIBILITY » ELIGIBILITY » Git Repositories » GIT REPO and select ai_sql.ipynb Notebook that is already available in your Snowflake account as shown below.
+    On the left hand navigation menu, select Databases MEDI_CAL_ELIGIBILITY » ELIGIBILITY » Git Repositories » GIT REPO and see ai_sql.ipynb Notebook that is already available in your Snowflake account.
         - Create notebook from git repository
             
     2. Import the notebook to worksheet from your cloned repository
