@@ -53,10 +53,10 @@ Before using this codebase, ensure you have:
      1. First cell: Import statements and Snowflake session initialization
      2. Second cell: Create the ENROLLMENT_TRENDS table with AI analysis
      3. Third cell: Show summary trends
-     4. Fourth cell: Generate horizontal diverging bar chart highlighting percentage changes in Medi-Cal enrollment by eligibility group
+     4. Fourth cell: Generate horizontal diverging bar chart highlighting percentage changes in Medi-Cal enrollment by eligibility group over a six-month period
      5. Fifth cell: Generate two pie charts showing:
-        - Share of Total Enrollees by Group
-        - Share of Total Enrollees by Group over a six-month period
+        - Share of Total Enrollees by Eligibility Group over a six-month period
+        - Distribution of Eligibility Groups by Trend Classification over a six-month period
 
 ## Code Structure
 
