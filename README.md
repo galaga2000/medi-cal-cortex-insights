@@ -67,12 +67,6 @@ Before using this codebase, ensure you have:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
-
-- Snowflake for providing Cortex AI capabilities
-- Medi-Cal for the enrollment data https://data.chhs.ca.gov/dataset/medi-cal-enrollment-by-eligibility-group/resource/d33eee4a-4c17-48da-8099-3fd2bac29ac2
-
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
