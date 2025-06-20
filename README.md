@@ -36,20 +36,32 @@ Before using this codebase, ensure you have:
      4. Configure required permissions
 
 3. **Load Data**
-   - The data file is loaded automatically through Git integration
    - Verify data is successfully loaded into the tables by checking the MEDI_CAL_ENROLLMENT table
 
 4. **Load Notebook**
-   - Create a new Snowflake Notebook from the repository: https://github.com/galaga2000/medi-cal-cortex-insights/blob/main/ai_sql.ipynb
-   - Alternatively, upload `ai_sql.ipynb` directly to your worksheet
-   - [Connect the notebook to Git repository](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-snowgit#connect-an-existing-notebook-with-a-git-repository)
+  - You can load the notebook in two ways:
+
+    1. create notebook from git repository
+        - Verify Notebook that is already available in your Snowflake account as shown below.
+    On the left hand navigation menu, select Databases MEDI_CAL_ELIGIBILITY » ELIGIBILITY » Git Repositories » GIT REPO and select ai_sql.ipynb Notebook that is already available in your Snowflake account as shown below.
+        - Create notebook from git repository
+            
+    2. Import the notebook to worksheet from your cloned repository
+
+   **Alternative Method - Using Existing Notebook**
+   - On the left hand navigation menu, select:
+     Databases MEDI_CAL_ELIGIBILITY » ELIGIBILITY » Git Repositories » GIT REPO
+   - Select `ai_sql.ipynb` Notebook that is already available in your Snowflake account
 
 5. **Run the Analysis**
    - Execute the cells in sequence:
      1. First cell: Import statements and Snowflake session initialization
      2. Second cell: Create the ENROLLMENT_TRENDS table with AI analysis
      3. Third cell: Show summary trends
-     4. Fourth cell: Generate visualization
+     4. Fourth cell: Generate horizontal diverging bar chart highlighting percentage changes in Medi-Cal enrollment by eligibility group
+     5. Fifth cell: Generate two pie charts showing:
+        - Share of Total Enrollees by Group
+        - Share of Total Enrollees by Group over a six-month period
 
 ## Code Structure
 
