@@ -26,7 +26,6 @@ Before using this codebase, ensure you have:
 ## Setup Instructions
 
 1. **Set Up Snowflake Connection**
-   - Create a new Snowflake worksheet
    - Ensure you have the necessary permissions for Cortex AI functions
 
 2. **Run Setup Script**
@@ -42,6 +41,7 @@ Before using this codebase, ensure you have:
 
 4. **Load Notebook**
    - Create a new Snowflake Notebook either from the repository https://github.com/galaga2000/medi-cal-cortex-insights/blob/main/ai_sql.ipynb or by Click "Upload" and select the `ai_sql.ipynb` file
+   - [Open the notebook in Snowflake](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-snowgit)
 
 5. **Run the Analysis**
    - Execute the cells in sequence:
