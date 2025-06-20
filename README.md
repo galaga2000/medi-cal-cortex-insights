@@ -31,17 +31,18 @@ Before using this codebase, ensure you have:
 2. **Run Setup Script**
    - Execute `setup.sql` to:
      1. Create necessary database objects
-     2. Set up internal stage for data loading
-     3. Configure required permissions
+     2. Set up Git integration with the repository
+     3. Create internal stage for data loading
+     4. Configure required permissions
 
 3. **Load Data**
-   - Navigate to the internal stage created in setup.sql
-   - Upload the data file `data/7.1-total-medi-cal-enrollment-q4-2024-odp.csv`
-   - Verify data is successfully loaded into the tables
+   - The data file is loaded automatically through Git integration
+   - Verify data is successfully loaded into the tables by checking the MEDI_CAL_ENROLLMENT table
 
 4. **Load Notebook**
-   - Create a new Snowflake Notebook either from the repository https://github.com/galaga2000/medi-cal-cortex-insights/blob/main/ai_sql.ipynb or by Click "Upload" and select the `ai_sql.ipynb` file
-   - [Open the notebook in Snowflake](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-snowgit#connect-an-existing-notebook-with-a-git-repository)
+   - Create a new Snowflake Notebook from the repository: https://github.com/galaga2000/medi-cal-cortex-insights/blob/main/ai_sql.ipynb
+   - Alternatively, upload `ai_sql.ipynb` directly to your worksheet
+   - [Connect the notebook to Git repository](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-snowgit#connect-an-existing-notebook-with-a-git-repository)
 
 5. **Run the Analysis**
    - Execute the cells in sequence:
