@@ -67,10 +67,6 @@ Before using this codebase, ensure you have:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 The MIT License allows for free use, modification, and distribution of the code, provided that the copyright notice and license terms are included.
 
 ## Acknowledgments
